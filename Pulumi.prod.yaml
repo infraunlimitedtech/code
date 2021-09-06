@@ -1,0 +1,7 @@
+secretsprovider: hashivault://pulumi-infra-code
+encryptedkey: dmF1bHQ6djE6YXUyakhBeVlpZDFVQmRYSzJJazVnRSs0ZXN2cjBCaGZndFFIcmREbU96RXc4NFZqRTBEY3A2SS84NU1QMnNQMythd1FZRXNLeU51MTN2UHE=
+config:
+  gitlab:baseUrl: https://gitlab.intra.infraunlimited.tech
+  gitlab:token:
+    secure: v1:21gWxQ4wf9yIGzMp:Hu5d7sE8VJKzbspgBeA96KafPOBdGSJoSJNC62BE3/0TpcxW
+  gitlab:version: 4.1.0
