@@ -13,6 +13,12 @@ const groupList: gitlab.GroupArgs[] = [
     parentId: 2,
     path: 'infra',
   },
+  {
+    name: 'ansible',
+    description: 'InfraUnlimited ansible infrastructure',
+    parentId: 2,
+    path: 'ansible',
+  },
 ];
 
 interface Info {

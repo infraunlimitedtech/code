@@ -14,6 +14,12 @@ const repoList: gitlab.ProjectArgs[] = [
     namespaceId: groups.groupInfo['infra'].id.apply((id) => +id),
     visibilityLevel: 'public',
   },
+  {
+    name: 'ansible-role-vault',
+    description: 'Ansible role and tools for install/manage Hashi vault',
+    namespaceId: groups.groupInfo['ansible'].id.apply((id) => +id),
+    visibilityLevel: 'public',
+  },
 ];
 
 interface Info {
