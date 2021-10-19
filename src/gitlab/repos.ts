@@ -20,6 +20,12 @@ const repoList: gitlab.ProjectArgs[] = [
     namespaceId: groups.groupInfo['ansible'].id.apply((id) => +id),
     visibilityLevel: 'public',
   },
+  {
+    name: 'os-images',
+    description: 'Scripts for building iso, vagrant boxes, docker images, cloud images, etc',
+    namespaceId: groups.groupInfo['os-tools'].id.apply((id) => +id),
+    visibilityLevel: 'public',
+  },
 ];
 
 interface Info {

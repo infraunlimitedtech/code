@@ -5,19 +5,25 @@ const groupList: gitlab.GroupArgs[] = [
   {
     name: 'infraOps',
     description: 'InfraUnlimited Operation Team',
-    path: 'infraOps',
+    path: 'infraOps'
   },
   {
     name: 'infra',
     description: 'InfraUnlimited infra',
     parentId: 2,
-    path: 'infra',
+    path: 'infra'
   },
   {
     name: 'ansible',
     description: 'InfraUnlimited ansible infrastructure',
     parentId: 2,
-    path: 'ansible',
+    path: 'ansible'
+  },
+  {
+    name: 'os-tools',
+    description: 'Tools for supported operation systems',
+    parentId: 2,
+    path: 'os-tools'
   },
 ];
 
