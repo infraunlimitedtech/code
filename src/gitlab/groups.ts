@@ -43,7 +43,6 @@ export const groupInfo: Repositories = {};
 for (let settings of groupList) {
   let res = new gitlab.Group(settings.name as string, settings);
 
-  console.log(typeof res);
   let info: Info = {
     id: res.id,
     path: res.fullPath,

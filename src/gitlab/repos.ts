@@ -9,6 +9,12 @@ const repoList: gitlab.ProjectArgs[] = [
     namespaceId: groups.groupInfo['infra'].id.apply((id) => +id),
   },
   {
+    name: 'pulumi-crosswalks',
+    description: 'Infraunlimited infrastructure with Pulumi. Loosely based on pulumi crosswalks',
+    namespaceId: groups.groupInfo['infra'].id.apply((id) => +id),
+    visibilityLevel: 'public',
+  },
+  {
     name: 'code',
     description: 'tools for managing git repositories with IaC',
     namespaceId: groups.groupInfo['infra'].id.apply((id) => +id),
