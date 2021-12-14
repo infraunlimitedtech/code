@@ -1,7 +1,10 @@
 import * as pulumi from '@pulumi/pulumi';
-import * as gitlab from '@pulumi/gitlab';
-import * as groups from './src/gitlab/groups';
-import * as repos from './src/gitlab/repos';
+import * as gitlabGroups from './src/gitlab/groups';
+import * as gitlabRepos from './src/gitlab/repos';
+import * as gitlabMirrors from './src/gitlab/mirrors';
+import * as githubRepos from './src/github/repos';
 
-export const groupInfo = groups.groupInfo;
-export const repoInfo = repos.repoInfo;
+gitlabGroups.groupInfo;
+gitlabRepos.repoInfo;
+githubRepos.repoList;
+gitlabMirrors.repoList;

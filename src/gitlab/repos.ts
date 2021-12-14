@@ -2,7 +2,7 @@ import * as gitlab from '@pulumi/gitlab';
 import * as pulumi from '@pulumi/pulumi';
 import * as groups from './groups';
 
-const repoList: gitlab.ProjectArgs[] = [
+export const repoList: gitlab.ProjectArgs[] = [
   {
     name: 'infra-proposals',
     description: 'Proposals and experiments for infra',
@@ -10,7 +10,8 @@ const repoList: gitlab.ProjectArgs[] = [
   },
   {
     name: 'pulumi-crosswalks',
-    description: 'Infraunlimited infrastructure with Pulumi. Loosely based on pulumi crosswalks',
+    description:
+      'Infraunlimited infrastructure with Pulumi. Loosely based on pulumi crosswalks',
     namespaceId: groups.groupInfo['infra'].id.apply((id) => +id),
     visibilityLevel: 'public',
   },
@@ -28,7 +29,8 @@ const repoList: gitlab.ProjectArgs[] = [
   },
   {
     name: 'os-images',
-    description: 'Scripts for building iso, vagrant boxes, docker images, cloud images, etc',
+    description:
+      'Scripts for building iso, vagrant boxes, docker images, cloud images, etc',
     namespaceId: groups.groupInfo['os-tools'].id.apply((id) => +id),
     visibilityLevel: 'public',
   },
@@ -36,14 +38,20 @@ const repoList: gitlab.ProjectArgs[] = [
 
 interface Info {
   url: pulumi.Output<string>;
+  id: pulumi.Output<string>;
 }
 
-export const repoInfo: Array<Info> = [];
+type Repositories = {
+  [key: string]: Info;
+};
+
+export const repoInfo: Repositories = {};
 
 for (let repo of repoList) {
   let res = new gitlab.Project(repo.name as string, repo);
   let info: Info = {
     url: res.webUrl,
+    id: res.id,
   };
-  repoInfo.push(info);
+  repoInfo[repo.name as string] = info;
 }

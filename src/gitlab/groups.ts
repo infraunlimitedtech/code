@@ -5,25 +5,25 @@ const groupList: gitlab.GroupArgs[] = [
   {
     name: 'infraOps',
     description: 'InfraUnlimited Operation Team',
-    path: 'infraOps'
+    path: 'infraOps',
   },
   {
     name: 'infra',
     description: 'InfraUnlimited infra',
     parentId: 2,
-    path: 'infra'
+    path: 'infra',
   },
   {
     name: 'ansible',
     description: 'InfraUnlimited ansible infrastructure',
     parentId: 2,
-    path: 'ansible'
+    path: 'ansible',
   },
   {
     name: 'os-tools',
     description: 'Tools for supported operation systems',
     parentId: 2,
-    path: 'os-tools'
+    path: 'os-tools',
   },
 ];
 
@@ -34,7 +34,6 @@ interface Info {
 }
 
 type Repositories = {
-//  [key: string]: pulumi.OutputObject<Group>;
   [key: string]: Info;
 };
 
@@ -49,5 +48,4 @@ for (let settings of groupList) {
     url: res.webUrl,
   };
   groupInfo[settings.name as string] = info;
-  //groupInfo[settings.name as string] = res;
 }

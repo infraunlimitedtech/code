@@ -1,7 +1,11 @@
 secretsprovider: hashivault://pulumi-infra-code
 encryptedkey: dmF1bHQ6djE6YXUyakhBeVlpZDFVQmRYSzJJazVnRSs0ZXN2cjBCaGZndFFIcmREbU96RXc4NFZqRTBEY3A2SS84NU1QMnNQMythd1FZRXNLeU51MTN2UHE=
 config:
+  github:owner: infraunlimitedtech
+  github:token:
+    secure: v1:pU6mNEjM0wui+koC:3VlK663cAS6QmmQogb2UXiqGV/F+zRziFt8c+7xIfc/i5BMRldUAL1WbqAknfhnXuiEI/qplxbc=
   gitlab:baseUrl: https://gitlab.intra.infraunlimited.tech
   gitlab:token:
     secure: v1:21gWxQ4wf9yIGzMp:Hu5d7sE8VJKzbspgBeA96KafPOBdGSJoSJNC62BE3/0TpcxW
-  gitlab:version: 4.1.0
+  infra-code:mirrorToken:
+    secure: v1:bjxPEsgPsFkIhLjV:qjtbrygKWE2Rz3jrHLrQ85F1p2Nv4l5XIhtnuSTgmyD2xFsNDoQhDLvDXUMqIc6iOFJ1KcHExMk=
