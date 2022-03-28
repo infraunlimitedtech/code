@@ -43,6 +43,9 @@ export const repoList: Repo[] = [
       namespaceId: groups.groupInfo['infra'].id.apply((id) => +id),
       visibilityLevel: 'public',
     },
+    githubMirror: {
+      enabled: true,
+    },
   },
   {
     args: {
