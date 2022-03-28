@@ -3,9 +3,9 @@ encryptedkey: dmF1bHQ6djE6YXUyakhBeVlpZDFVQmRYSzJJazVnRSs0ZXN2cjBCaGZndFFIcmREbU
 config:
   github:owner: infraunlimitedtech
   github:token:
-    secure: v1:pU6mNEjM0wui+koC:3VlK663cAS6QmmQogb2UXiqGV/F+zRziFt8c+7xIfc/i5BMRldUAL1WbqAknfhnXuiEI/qplxbc=
+    secure: v1:b/Z7FQfb18MrNlG2:7oR7JZGLdf0dLgBeyf4pEepNAIljKwf1lU0fQs+UYTEuPeImrWEAHFgOEXDEF+5HYm44+l+5juk=
   gitlab:baseUrl: https://gitlab.intra.infraunlimited.tech
   gitlab:token:
-    secure: v1:21gWxQ4wf9yIGzMp:Hu5d7sE8VJKzbspgBeA96KafPOBdGSJoSJNC62BE3/0TpcxW
+    secure: v1:OBKFzGOymrrqFmu2:UmWlkRK1M9gp2zqYUB+irKunZg/oD32tZaBvFrHzpzRW2vDP
   infra-code:mirrorToken:
     secure: v1:bjxPEsgPsFkIhLjV:qjtbrygKWE2Rz3jrHLrQ85F1p2Nv4l5XIhtnuSTgmyD2xFsNDoQhDLvDXUMqIc6iOFJ1KcHExMk=

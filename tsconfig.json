@@ -10,7 +10,8 @@
     "pretty": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es5", "es6", "dom", "dom.iterable"]
   },
   "files": ["index.ts"]
 }
