@@ -66,6 +66,9 @@ export const repoList: Repo[] = [
       namespaceId: groups.groupInfo['os-tools'].id.apply((id) => +id),
       visibilityLevel: 'public',
     },
+    githubMirror: {
+      enabled: true,
+    },
   },
 ];
 
