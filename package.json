@@ -4,7 +4,7 @@
     "@types/node": "^16.11.12"
   },
   "dependencies": {
-    "@pulumi/github": "",
+    "@pulumi/github": "5.1.0",
     "@pulumi/gitlab": "4.1.0",
     "@pulumi/pulumi": "^3.26.0",
     "prettier": "^2.5.1"
