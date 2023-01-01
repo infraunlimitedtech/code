@@ -9,19 +9,19 @@ const groupList: gitlab.GroupArgs[] = [
   },
   {
     name: 'infra',
-    description: 'InfraUnlimited infra',
+    description: 'InfraUnlimited live repositories. It contains code as infra definition',
     parentId: 2,
     path: 'infra',
   },
   {
     name: 'ansible',
-    description: 'InfraUnlimited ansible infrastructure',
+    description: 'InfraUnlimited ansible roles. Mostly unused, staled and deprecated',
     parentId: 2,
     path: 'ansible',
   },
   {
     name: 'os-tools',
-    description: 'Tools for supported operation systems',
+    description: 'Tools and utils for operation systems: kickstart, packer, etc',
     parentId: 2,
     path: 'os-tools',
   },
