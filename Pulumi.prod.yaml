@@ -6,6 +6,6 @@ config:
     secure: v1:dAFrUEX2jaCuufYU:wfn0ncCLpDqN6QMFP/g/cA7sop46Ed/+Dsma2pJ7AGM1b5orWVjdLxH/8KhMV//nJUkZOeAUNyI=
   gitlab:baseUrl: https://gitlab.intra.infraunlimited.tech
   gitlab:token:
-    secure: v1:mJ5lqUwjfVvr1HC0:gjFxx+siX8cznS1s7nbO34Osa8JiGPEVfvT+yP+jyR9SC8zW
+    secure: v1:9TZt6XFAtqXtiyCZ:nBB2phI+0qmdvIQVU6aYChILYBbP0ml0URsPDU8vjExSmESUQuDLDD7t
   infra-code:mirrorToken:
     secure: v1:QDKKT6lUiMD+zqIC:8v8Ldp6is+KUXwIOhCLNtAm96mmPZ9HFhiZVL0vxFpy9rISyrBie+03YBp/L010TKGllBWqhd/I=
