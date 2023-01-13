@@ -26,6 +26,18 @@ export const repoList: Repo[] = [
   },
   {
     args: {
+      name: 'SOPs',
+      description:
+        'Home of upgrade/install tasks for our services. Contains scripts, tools and documentation for standart operation procedures.',
+      namespaceId: groups.groupInfo['infra'].id.apply((id) => +id),
+      visibilityLevel: 'public',
+    },
+    githubMirror: {
+      enabled: false,
+    },
+  },
+  {
+    args: {
       name: 'pulumi-crosswalks',
       description:
         'Infraunlimited infrastructure with Pulumi. Loosely based on pulumi crosswalks',
