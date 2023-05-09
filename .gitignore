@@ -1,2 +1,4 @@
+.husky
+*.sublime-workspace
 /bin/
 /node_modules/

@@ -1,12 +1,20 @@
 {
   "name": "infra-code",
   "devDependencies": {
-    "@types/node": "^16.11.12"
+    "@types/node": "^16.11.12",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2"
   },
   "dependencies": {
-    "@pulumi/github": "5.3.0",
-    "@pulumi/gitlab": "4.9.0",
-    "@pulumi/pulumi": "^3.26.0",
-    "prettier": "^2.5.1"
+    "@pulumi/github": "5.8.0",
+    "@pulumi/gitlab": "4.10.0",
+    "@pulumi/pulumi": "^3.66.0",
+    "prettier": "^2.8.8"
+  },
+  "scripts": {
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "*": "prettier --ignore-unknown --write"
   }
 }
